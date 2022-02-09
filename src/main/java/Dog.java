@@ -13,14 +13,15 @@ public class Dog extends Animal{
     @Override
     public void run(int obstacleLength) {
         if (obstacleLength <= 500)
-            super.run(obstacleLength);
+            System.out.println(name + " пробежал " + obstacleLength + "м");
         else System.out.println("Dog can't run more than 500 m.");
     }
 
     @Override
     public void swim(int obstacleLength) {
-        if (obstacleLength <= 10)
-            super.swim(obstacleLength);
+        if (obstacleLength <= 10){
+            System.out.printf("%s проплыл %dм", name, obstacleLength);
+            System.out.println();}
         else System.out.println("Dog can't swim more than 10 m.");
     }
 }
