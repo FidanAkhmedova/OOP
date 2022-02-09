@@ -13,13 +13,14 @@ public static int k = 0;
     @Override
     public void run(int obstacleLength) {
         if (obstacleLength <= 200)
-            super.run(obstacleLength);
+            System.out.println(name + " пробежал " + obstacleLength + "м");
         else System.out.println("Cat can't run more than 200 m.");
     }
 
 
     @Override
     public void swim(int obstacleLength) {
+
         System.out.println("Cat can't swim.");
     }
 }
